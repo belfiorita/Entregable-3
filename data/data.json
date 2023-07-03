@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "BROCCOLI MAN",
+    "price": 5000,
+    "img": "BROCCOLI MAN.jpg",
+    "description": "You are what you eat, right? Then I'm broccoli"
+  },
+  {
+    "id": 2,
+    "name": "CAT'S MEMORIES",
+    "price": 6000,
+    "img": "CAT'S MEMORIES.jpg",
+    "description": "I'm always thinking about you, that's the PURRRblem."
+  },
+  {
+    "id": 3,
+    "name": "RESET!",
+    "price": 7000,
+    "img": "RESET!.jpg",
+    "description": "Sometimes, what we go looking for outside really is within reach."
+  },
+  {
+    "id": 4,
+    "name": "FEAR GHOST",
+    "price": 5000,
+    "img": "FEAR GHOST.jpg",
+    "description": "When the fear paralyzes us, then we are dead."
+  },
+  {
+    "id": 5,
+    "name": "GODDES OF WISDOM",
+    "price": 7000,
+    "img": "GODDES OF WISDOM.jpg",
+    "description": "She's the one of the wisdom, the one that doesn't sleep at night."
+  },
+  {
+    "id": 6,
+    "name": "The doubt",
+    "price": 7000,
+    "img": "La duda!.jpg",
+    "description": "The doubt is inherent, we can't scape from her, neither she from us."
+  },
+  {
+    "id": 7,
+    "name": "Think, grow, create...",
+    "price": 7000,
+    "img": "Pensar, crecer, crear..jpg",
+    "description": "When ideas and concentration blossom, Let's get to work!"
+  },
+  {
+    "id": 8,
+    "name": "In the clouds",
+    "price": 7000,
+    "img": "En las nubes!.jpg",
+    "description": "Who hasn't been lost, with the head up in the clouds?."
+  }
+]
