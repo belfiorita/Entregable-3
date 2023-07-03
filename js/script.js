@@ -140,11 +140,21 @@ myForm.addEventListener("submit", function (event) {
 
     myForm.reset();
 
-    alert(
-      `${contact.firstName} thanks for contacting, we'll get back to you as soon as possible.`
-    );
+    Swal.fire({
+      icon: "success",
+      title: `${contact.firstName} thanks for contacting, we'll get back to you as soon as possible.`,
+      allowOutsideClick: true,
+      allowEscapeKey: true,
+      allowEnterKey: true,
+    });
   } else {
-    alert("There was an error, please check all the fields.");
+    Swal.fire({
+      icon: "error",
+      title: `There was an error, please check all the fields.`,
+      allowOutsideClick: true,
+      allowEscapeKey: true,
+      allowEnterKey: true,
+    });
   }
 });
 
@@ -159,16 +169,16 @@ function cleanLS(key) {
 /*                               MODAL & CART                                    */
 /*********************************************************************************/
 
+function loadCartToLS() {
+  cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
+}
+
 function eventLoader() {
   document.addEventListener("DOMContentLoaded", () => {
     renderProducts();
     loadCartToLS();
     showCartProducts();
   });
-
-  function loadCartToLS() {
-    cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
-  }
 
   shop.addEventListener("click", addProduct);
   cartContent.addEventListener("click", deleteProduct);
@@ -330,9 +340,9 @@ function buyCartContent() {
     allowEnterKey: true,
   });
   cleanLS("cartProducts");
+  closeCart();
   loadCartToLS();
   showCartProducts();
-  closeCart();
 }
 
 function emptyCartContent() {
@@ -353,8 +363,9 @@ function emptyCartContent() {
         timer: 5000,
       });
       cleanLS("cartProducts");
-      loadCartToLS();
       closeCart();
+      loadCartToLS();
+      showCartProducts();
     } else {
       closeCart();
     }
